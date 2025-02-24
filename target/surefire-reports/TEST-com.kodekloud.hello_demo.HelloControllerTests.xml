@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.kodekloud.hello_demo.HelloControllerTests" time="3.082" tests="6" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/var/lib/jenkins/workspace/pipelineProject/target/test-classes:/var/lib/jenkins/workspace/pipelineProject/target/classes:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.2/spring-boot-starter-web-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.2/spring-boot-starter-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot/3.3.2/spring-boot-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.2/spring-boot-autoconfigure-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.2/spring-boot-starter-logging-3.3.2.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/var/lib/jenkins/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/var/lib/jenkins/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/var/lib/jenkins/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/var/lib/jenkins/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/var/lib/jenkins/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.2/spring-boot-starter-json-3.3.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.2/jackson-datatype-jdk8-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.2/jackson-module-parameter-names-2.17.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.2/spring-boot-starter-tomcat-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.26/tomcat-embed-core-10.1.26.jar:/var/lib/jenkins/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.26/tomcat-embed-el-10.1.26.jar:/var/lib/jenkins/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.26/tomcat-embed-websocket-10.1.26.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-web/6.1.11/spring-web-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-beans/6.1.11/spring-beans-6.1.11.jar:/var/lib/jenkins/.m2/repository/io/micrometer/micrometer-observation/1.13.2/micrometer-observation-1.13.2.jar:/var/lib/jenkins/.m2/repository/io/micrometer/micrometer-commons/1.13.2/micrometer-commons-1.13.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-webmvc/6.1.11/spring-webmvc-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-aop/6.1.11/spring-aop-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-context/6.1.11/spring-context-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-expression/6.1.11/spring-expression-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.2/spring-boot-starter-test-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-test/3.3.2/spring-boot-test-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.2/spring-boot-test-autoconfigure-3.3.2.jar:/var/lib/jenkins/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/var/lib/jenkins/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/var/lib/jenkins/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/var/lib/jenkins/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/var/lib/jenkins/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/var/lib/jenkins/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/var/lib/jenkins/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/var/lib/jenkins/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy/1.14.18/byte-buddy-1.14.18.jar:/var/lib/jenkins/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/var/lib/jenkins/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.3/junit-jupiter-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.3/junit-jupiter-api-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/var/lib/jenkins/.m2/repository/org/junit/platform/junit-platform-commons/1.10.3/junit-platform-commons-1.10.3.jar:/var/lib/jenkins/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.3/junit-jupiter-params-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.3/junit-jupiter-engine-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/junit/platform/junit-platform-engine/1.10.3/junit-platform-engine-1.10.3.jar:/var/lib/jenkins/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.18/byte-buddy-agent-1.14.18.jar:/var/lib/jenkins/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/var/lib/jenkins/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/var/lib/jenkins/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/var/lib/jenkins/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-core/6.1.11/spring-core-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-jcl/6.1.11/spring-jcl-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-test/6.1.11/spring-test-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="UTC"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-amazon-corretto.x86_64/lib"/>
+    <property name="sun.java.command" value="/var/lib/jenkins/workspace/pipelineProject/target/surefire/surefirebooter-20250224122408908_3.jar /var/lib/jenkins/workspace/pipelineProject/target/surefire 2025-02-24T12-24-08_095-jvmRun1 surefire-20250224122408908_1tmp surefire_0-20250224122408908_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/var/lib/jenkins/workspace/pipelineProject/target/test-classes:/var/lib/jenkins/workspace/pipelineProject/target/classes:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.2/spring-boot-starter-web-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.2/spring-boot-starter-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot/3.3.2/spring-boot-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.2/spring-boot-autoconfigure-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.2/spring-boot-starter-logging-3.3.2.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/var/lib/jenkins/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/var/lib/jenkins/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/var/lib/jenkins/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/var/lib/jenkins/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/var/lib/jenkins/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.2/spring-boot-starter-json-3.3.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.2/jackson-datatype-jdk8-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.2/jackson-module-parameter-names-2.17.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.2/spring-boot-starter-tomcat-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.26/tomcat-embed-core-10.1.26.jar:/var/lib/jenkins/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.26/tomcat-embed-el-10.1.26.jar:/var/lib/jenkins/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.26/tomcat-embed-websocket-10.1.26.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-web/6.1.11/spring-web-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-beans/6.1.11/spring-beans-6.1.11.jar:/var/lib/jenkins/.m2/repository/io/micrometer/micrometer-observation/1.13.2/micrometer-observation-1.13.2.jar:/var/lib/jenkins/.m2/repository/io/micrometer/micrometer-commons/1.13.2/micrometer-commons-1.13.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-webmvc/6.1.11/spring-webmvc-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-aop/6.1.11/spring-aop-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-context/6.1.11/spring-context-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-expression/6.1.11/spring-expression-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.2/spring-boot-starter-test-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-test/3.3.2/spring-boot-test-3.3.2.jar:/var/lib/jenkins/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.2/spring-boot-test-autoconfigure-3.3.2.jar:/var/lib/jenkins/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/var/lib/jenkins/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/var/lib/jenkins/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/var/lib/jenkins/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/var/lib/jenkins/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/var/lib/jenkins/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/var/lib/jenkins/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/var/lib/jenkins/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy/1.14.18/byte-buddy-1.14.18.jar:/var/lib/jenkins/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/var/lib/jenkins/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.3/junit-jupiter-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.3/junit-jupiter-api-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/var/lib/jenkins/.m2/repository/org/junit/platform/junit-platform-commons/1.10.3/junit-platform-commons-1.10.3.jar:/var/lib/jenkins/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.3/junit-jupiter-params-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.3/junit-jupiter-engine-5.10.3.jar:/var/lib/jenkins/.m2/repository/org/junit/platform/junit-platform-engine/1.10.3/junit-platform-engine-1.10.3.jar:/var/lib/jenkins/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.18/byte-buddy-agent-1.14.18.jar:/var/lib/jenkins/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/var/lib/jenkins/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/var/lib/jenkins/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/var/lib/jenkins/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-core/6.1.11/spring-core-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-jcl/6.1.11/spring-jcl-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-test/6.1.11/spring-test-6.1.11.jar:/var/lib/jenkins/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/var/lib/jenkins"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-amazon-corretto.x86_64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/var/lib/jenkins/workspace/pipelineProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/var/lib/jenkins/workspace/pipelineProject/target/surefire/surefirebooter-20250224122408908_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.14+7-LTS"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.1.128-136.201.amzn2023.x86_64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.14.7.1"/>
+    <property name="localRepository" value="/var/lib/jenkins/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.14"/>
+    <property name="user.dir" value="/var/lib/jenkins/workspace/pipelineProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="32156"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.14+7-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[hello-demo] "/>
+  </properties>
+  <testcase name="welcome_returnsNotEmpty" classname="com.kodekloud.hello_demo.HelloControllerTests" time="0.908">
+    <system-out><![CDATA[12:24:09.766 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kodekloud.hello_demo.HelloControllerTests]: HelloControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:24:09.861 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kodekloud.hello_demo.MainApplication for test class com.kodekloud.hello_demo.HelloControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2025-02-24T12:24:10.286Z  INFO 32156 --- [hello-demo] [           main] c.k.hello_demo.HelloControllerTests      : Starting HelloControllerTests using Java 17.0.14 with PID 32156 (started by jenkins in /var/lib/jenkins/workspace/pipelineProject)
+2025-02-24T12:24:10.288Z  INFO 32156 --- [hello-demo] [           main] c.k.hello_demo.HelloControllerTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-24T12:24:11.647Z  INFO 32156 --- [hello-demo] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-24T12:24:11.649Z  INFO 32156 --- [hello-demo] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-24T12:24:11.653Z  INFO 32156 --- [hello-demo] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-24T12:24:11.684Z  INFO 32156 --- [hello-demo] [           main] c.k.hello_demo.HelloControllerTests      : Started HelloControllerTests in 1.71 seconds (process running for 2.704)
+]]></system-out>
+  </testcase>
+  <testcase name="welcome_returnsCorrectLength" classname="com.kodekloud.hello_demo.HelloControllerTests" time="0.012"/>
+  <testcase name="welcome_returnsNotNull" classname="com.kodekloud.hello_demo.HelloControllerTests" time="0.013"/>
+  <testcase name="welcome_ok" classname="com.kodekloud.hello_demo.HelloControllerTests" time="0.004"/>
+  <testcase name="welcome_startsWithExpectedGreeting" classname="com.kodekloud.hello_demo.HelloControllerTests" time="0.016">
+    <failure message="Response content&#10;Expected: a string starting with &quot;Hola&quot;&#10;     but: was &quot;Hello, KodeKloud community!&quot;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Response content
+Expected: a string starting with "Hola"
+     but: was "Hello, KodeKloud community!"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers.lambda$string$3(ContentResultMatchers.java:141)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.kodekloud.hello_demo.HelloControllerTests.welcome_startsWithExpectedGreeting(HelloControllerTests.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /hello
+       Parameters = {}
+          Headers = [Accept:"application/json"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.kodekloud.hello_demo.HelloController
+           Method = com.kodekloud.hello_demo.HelloController#hello()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", Content-Length:"27"]
+     Content type = application/json
+             Body = Hello, KodeKloud community!
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="welcome_endsWithExpectedGreeting" classname="com.kodekloud.hello_demo.HelloControllerTests" time="0.018"/>
+</testsuite>
