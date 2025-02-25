@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    tools {
+        maven "M399"
+        git "Default"
+    }
+    stages{
+        stage("version check"){
+            steps{
+                sh "mvn --version"
+                sh "git --version"
+            }
+        }
+        
+        stage("build){
+            steps{
+                sh "mvn clean package -DskipTests=true"
+            }
+        }
+        stage("unit"){
+            steps{
+                sh "mvn test"
+            }
+        }
+        }
+    }
+    
+
